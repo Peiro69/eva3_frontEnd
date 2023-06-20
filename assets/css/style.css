@@ -1,0 +1,131 @@
+.claro1{
+   background-color: #D1E7DD;
+   color : black;
+}
+.claro2{
+   background-color: #A7B9B1;
+   color: black;
+}
+
+.oscuro1{
+   background-color: #282d2b;
+   color: white;
+}
+.oscuro2{
+   background-color: #171a18;
+   color: white;
+}
+
+.pequenio-p{
+   font-size: 18px;
+}
+
+.mediano-p{
+   font-size: 24px;
+}
+
+.grande-p{
+   font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-fluid{
+   max-width: 1200px; 
+}
+.row{
+   margin: 0;
+}
+
+#row-inicio{
+   font-size: 45px;
+   font-weight: bold;
+   padding-left: 30px;
+}
+
+#texto-pre{
+   margin-top: 120px;
+}
+#row-presentacion{
+   background-size: cover;
+}
+
+#row-variedad img{
+   border-radius: 55%;
+}
+
+
+
+#btn-config{
+   display: none;
+}
+
+.containeer{
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+}
+
+.opciones button, .config{
+   display: block;
+   background: #23BAC4;
+   width: 55px;
+   height: 55px;
+   line-height: 55px;
+   text-align: center;
+   border-radius: 50%;
+   box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+   transition: all 500ms ease;
+}
+.opciones button:hover{
+   background: #00eeff;
+}
+
+
+
+
+
+.opciones button{
+   margin-bottom: -15px;
+   opacity: 0;
+   visibility: hidden;
+}
+
+#btn-config:checked~ .opciones button{
+   margin-bottom: 10px;
+   opacity: 1;
+   visibility: visible;
+}
+
+.config{
+   cursor: pointer;
+   background: #E7D40A;
+}
+
+#btn-config:checked ~ .btn-config .config{
+   transform: rotate(137deg);
+   background: #ffea00;
+}
+
+.btn-config label:hover{
+   background: #ffea00;
+}
+
+.btn-config{
+   text-align: center;
+}

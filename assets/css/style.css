@@ -28,12 +28,36 @@
    font-size: 35px;
 }
 
+.pequenio-h1{
+   font-size: 26px;
+}
+
+.mediano-h1{
+   font-size: 32px;
+}
+
+.grande-h1{
+   font-size: 43px;
+}
 
 
+#tabla{
+   margin: 0 auto;
+}
 
 
+.bx{
+   font-size: 30px;
+   transform: translateX(-45px);
+   transform: translateY(5px);
+   cursor:pointer;
+   height: 20px;
+   width: 20px;
+}
 
-
+.erroneo{
+   border-color: red;
+}
 
 
 

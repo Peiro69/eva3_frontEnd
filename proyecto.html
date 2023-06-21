@@ -11,7 +11,7 @@
         <div class="containeer">
             <input type="checkbox" id="btn-config">
             <div class="opciones">
-                <button type="button" id="titulos" value="light"><img src="assets/imagenes/edits/titulos.png"  width="20" height="20" alt="Fuente Títulos" title="Fuente Títulos"></button>
+                <button type="button" id="titulos" value="med-h1"><img src="assets/imagenes/edits/titulos.png"  width="20" height="20" alt="Fuente Títulos" title="Fuente Títulos"></button>
                 <button type="button" id="parrafos" value="med-p"><img src="assets/imagenes/edits/parrafos.png" width="20" height="20" alt="Fuente Parrafos" title="Fuente Parrafos"></button>
                 <button type="button" id="contraste" value="light"><img src="assets/imagenes/edits/simbolo-de-circulo-de-contraste.png"   width="20" height="20" alt="Contraste" title="Contraste"></button>
             </div>
@@ -44,6 +44,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="#row-mapa"><img src="assets/imagenes/corona.png" alt="Kingdom" title="Kingdom" width="15" height="15" class="d-inline-block align-top-text">Tienda</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contenedorTabla"><img src="assets/imagenes/gorra.png" alt="Cap" title="Cap" width="15" height="15" class="d-inline-block align-top-text">Socios</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -53,8 +56,10 @@
         <main>
             <div class="claro1">
                 <div class="row py-5" id="row-inicio">
-                    <div class="mt-20">
-                    Bienvenido a Cap Kingdom<br>Hazte socio<br>
+                    <div class="mt-20 ">
+                        <h1 class="grande-h1 fw-bold">
+                            Bienvenido a Cap Kingdom<br>Hazte socio<br>
+                        </h1>
                     <a href="#row-form" class="btn btn-success mt-3">Regístrate</a>
                     </div>
                 </div>
@@ -64,7 +69,7 @@
                 <div class="container text-center">
                     <div class="row">
                         <div class=" col-md-6 my-auto">
-                        <h1 class="pequenio-h1 fw-bold">
+                        <h1 class="mediano-h1 fw-bold">
                             <img src="assets/imagenes/gorra.png" alt="Cap" title="Cap" width="30" height="30" class="d-inline-block align-top-text">
                             ¿Quienes somos?
                             <img src="assets/imagenes/corona.png" alt="Kingdom" title="Kingdom" width="30" height="30" class="d-inline-block align-top-text">
@@ -85,7 +90,7 @@
             <div class="row py-5" id="row-marcas">
                 <div class="container text-center">
                     <div class="row">
-                        <h1 class="fw-bold">
+                        <h1 class="mediano-h1 fw-bold">
                             <img src="assets/imagenes/gorra.png" alt="Cap" title="Cap" width="30" height="30" class="d-inline-block align-top-text">
                             Marcas principales
                             <img src="assets/imagenes/corona.png" alt="Kingdom" title="Kingdom" width="30" height="30" class="d-inline-block align-top-text">
@@ -136,7 +141,7 @@
             <div class="claro2">
             <div class="row py-5" id="row-variedad">
                 <div>
-                    <h1 class="fw-bold text-center">
+                    <h1 class="mediano-h1 fw-bold text-center">
                         <img src="assets/imagenes/gorra.png" alt="Cap" title="Cap" width="30" height="30" class="d-inline-block align-top-text">
                         Principales productos
                         <img src="assets/imagenes/corona.png" alt="Kingdom" title="Kingdom" width="30" height="30" class="d-inline-block align-top-text">
@@ -170,7 +175,7 @@
             </div>
             <div class="claro1">
             <div class="row py-5" id="row-mapa">
-                <h1 class="fw-bold text-center">
+                <h1 class="mediano-h1 fw-bold text-center">
                     <img src="assets/imagenes/gorra.png" alt="Cap" title="Cap" width="30" height="30" class="d-inline-block align-top-text">
                     Dirección de la tienda
                     <img src="assets/imagenes/corona.png" alt="Kingdom" title="Kingdom" width="30" height="30" class="d-inline-block align-top-text">
@@ -184,7 +189,7 @@
             <div class="claro2">
             <div class="row py-5" id="row-form">
                 <div class="col-md-6">
-                    <h1 class="fw-bold text-center">
+                    <h1 class="mediano-h1 fw-bold text-center">
                         <img src="assets/imagenes/gorra.png" alt="Cap" title="Cap" width="30" height="30" class="d-inline-block align-top-text">
                         Crea tu cuenta
                         <img src="assets/imagenes/corona.png" alt="Kingdom" title="Kingdom" width="30" height="30" class="d-inline-block align-top-text">
@@ -194,8 +199,11 @@
                         <input type="text" name="nombre" id="nombre"><br>
                         <label for="correo" name="correo" placeholder="correo@correo.com">Correo</label><br>
                         <input type="email" name="correo" id="correo" placeholder="ejemplo@ejemplo.com"><br>
-                        <label for="contra">Contraseña</label><br>
-                        <input type="password" name="password" placeholder="Contraseña" id="contra"><br>
+                        <label for="contra" class="txt-ext">Contraseña</label><br>
+                        <input type="password" name="password" placeholder="Contraseña" id="contra">
+                            <i>
+                        <img class="bx" id="uwu" src="assets/imagenes/edits/visible.png" alt="a">
+                        </i><br>
                         <label for="telefono">Teléfono</label><br>
                         <input type="tel" name="telefono" id="telefono"><br>
                         <label for="nacimiento">Fecha de nacimiento</label><br>
@@ -207,14 +215,22 @@
                         <label for="genero">Mujer</label><br>
                         <input type="radio" name="check" id="genero3" value="Reservado">
                         <label for="genero">Prefiero no decirlo</label><br>
+                        
+                        <label for="producto" class="txt-ext">Producto Favorito</label><br>
+                            <select name="producto" id="producto">
+                                <option value="Jockey">Jockey</option>
+                                <option value="Gorro">Gorro</option>
+                                <option value="Polera">Polera</option>
+                            </select><br>
+
+                            <input type="checkbox" name="terminos" id="terminos">
+                            <label for="terminos" class="txt-ext">Acepta Términos y condiciones</label>                
                         <br><a type="button" id="boton" class="btn btn-success mt-3" >Registro</a><br>
                         <span id="sBtnAccion">
                             
                         </span>
                     </form>
-                    <div id="contenedorTabla">
-            
-                    </div>
+                    
                 </div>
                 <div class="col-md-6 my-auto">
                     <p class="mediano-p text-center">
@@ -223,8 +239,11 @@
                 </div>
             </div>
             </div>
+            <div class="claro1" id="contenedorTabla">
+            
+            </div>
         </main>
-        <div class="claro1">
+        <div class="claro2">
         <footer id="footer">
             <div class="container">
                 <div class="row">
@@ -247,7 +266,6 @@
                     </div>
                     <div class="row col-md-4 my-3">
                         &copy 2023
-                        <!--button type="button" id="contraste" value="light">Contraste</button-->
                     </div>
                 </div>
             </div>
